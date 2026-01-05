@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module SYSTEM "module.dtd" >
+<module>
+    <name>magnolia-usermanager-inmemory</name>
+    <displayName>UserManager-InMemory</displayName>
+    <description>In memory user manager</description>
+    <versionHandler>com.merkle.oss.magnolia.usermanager.inmemory.configuration.UserManagerInMemoryModuleVersionHandler</versionHandler>
+    <version>${project.version}</version>
+
+    <components>
+        <id>main</id>
+        <component>
+            <type>com.merkle.oss.magnolia.usermanager.inmemory.InMemoryUserManager$State</type>
+            <implementation>com.merkle.oss.magnolia.usermanager.inmemory.InMemoryUserManager$State</implementation>
+            <scope>singleton</scope>
+        </component>
+    </components>
+    <dependencies>
+        <dependency>
+            <name>core</name>
+        </dependency>
+    </dependencies>
+</module>

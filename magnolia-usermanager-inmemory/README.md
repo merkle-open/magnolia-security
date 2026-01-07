@@ -3,7 +3,7 @@ In memory user manager (useful for technical users).
 
 ## Requirements
 * Java 17
-* Magnolia >= 6.0
+* Magnolia >= 6.4
 
 ## Installation
 

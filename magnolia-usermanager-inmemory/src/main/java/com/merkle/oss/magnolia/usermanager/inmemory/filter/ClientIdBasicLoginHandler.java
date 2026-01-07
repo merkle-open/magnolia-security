@@ -6,9 +6,9 @@ import info.magnolia.cms.security.auth.login.LoginResult;
 
 import com.merkle.oss.magnolia.usermanager.inmemory.ClientIdCredentialsCallbackFilter;
 
-import jakarta.annotation.Nullable;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
+import javax.annotation.Nullable;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 public class ClientIdBasicLoginHandler extends BasicLogin {
 	@Nullable

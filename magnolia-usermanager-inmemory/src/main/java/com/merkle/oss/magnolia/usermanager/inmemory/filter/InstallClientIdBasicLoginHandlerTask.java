@@ -17,7 +17,7 @@ import javax.jcr.Node;
 import javax.jcr.RepositoryException;
 import javax.jcr.Value;
 
-import jakarta.inject.Inject;
+import javax.inject.Inject;
 
 public class InstallClientIdBasicLoginHandlerTask extends AbstractRepositoryTask {
 	private static final String TASK_NAME = "Install ClientIdBasicLoginHandler";

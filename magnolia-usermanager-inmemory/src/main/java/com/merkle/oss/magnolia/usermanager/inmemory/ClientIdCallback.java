@@ -6,7 +6,7 @@ import java.util.Optional;
 
 import javax.security.auth.callback.Callback;
 
-import jakarta.annotation.Nullable;
+import javax.annotation.Nullable;
 
 public class ClientIdCallback implements Callback, Serializable {
 	@Nullable

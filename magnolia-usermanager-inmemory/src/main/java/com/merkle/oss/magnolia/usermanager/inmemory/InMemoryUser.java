@@ -12,7 +12,7 @@ import java.util.SortedSet;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import jakarta.annotation.Nullable;
+import javax.annotation.Nullable;
 
 public class InMemoryUser implements User {
 	private final Map<String, String> properties;

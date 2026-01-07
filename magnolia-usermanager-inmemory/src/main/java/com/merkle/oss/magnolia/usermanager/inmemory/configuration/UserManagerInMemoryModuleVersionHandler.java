@@ -9,7 +9,7 @@ import java.util.List;
 
 import com.merkle.oss.magnolia.usermanager.inmemory.filter.InstallClientIdBasicLoginHandlerTask;
 
-import jakarta.inject.Inject;
+import javax.inject.Inject;
 
 public class UserManagerInMemoryModuleVersionHandler extends DefaultModuleVersionHandler {
 	private final List<Task> installOrUpdateTasks;

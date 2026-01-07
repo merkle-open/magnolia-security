@@ -22,7 +22,7 @@ import javax.security.auth.callback.CallbackHandler;
 import javax.security.auth.login.FailedLoginException;
 import javax.security.auth.login.LoginException;
 
-import jakarta.annotation.Nullable;
+import javax.annotation.Nullable;
 
 public class InMemoryAndJcrAuthenticationModule extends JCRAuthenticationModule {
 	@Nullable

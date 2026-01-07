@@ -3,7 +3,7 @@ In memory user manager (useful for technical users).
 
 ## Requirements
 * Java 17
-* Magnolia >= 6.0
+* Magnolia = 6.3
 
 ## Installation
 
@@ -12,7 +12,7 @@ In memory user manager (useful for technical users).
     <dependency>
         <groupId>com.merkle.oss.magnolia</groupId>
         <artifactId>magnolia-usermanager-inmemory</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>0.0.1Magnolia6_3-SNAPSHOT</version>
     </dependency>
     ```
 * Configure InMemoryAndJcrAuthenticationModule in [jaas config](https://docs.magnolia-cms.com/product-docs/administration/security/jaas-security-setup/) (WEB-INF/config/jaas.config)

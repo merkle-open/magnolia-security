@@ -23,8 +23,8 @@ import org.apache.commons.lang3.StringUtils;
 
 import com.machinezoo.noexception.Exceptions;
 
-import jakarta.inject.Inject;
-import jakarta.inject.Singleton;
+import javax.inject.Inject;
+import javax.inject.Singleton;
 
 public class InMemoryUserManager implements UserManager {
 	public static final Realm REALM = new Realm.RealmImpl("in-memory");

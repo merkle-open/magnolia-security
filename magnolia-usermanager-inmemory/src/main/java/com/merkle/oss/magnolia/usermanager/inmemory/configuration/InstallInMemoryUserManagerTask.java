@@ -19,7 +19,7 @@ import javax.jcr.Value;
 
 import com.merkle.oss.magnolia.usermanager.inmemory.InMemoryUserManager;
 
-import jakarta.inject.Inject;
+import javax.inject.Inject;
 
 public class InstallInMemoryUserManagerTask extends AbstractRepositoryTask {
     private static final String TASK_NAME = "Install InMemoryUserManager";

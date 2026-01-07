@@ -6,7 +6,7 @@
   <parent>
     <groupId>com.merkle.oss.magnolia</groupId>
     <artifactId>magnolia-security</artifactId>
-    <version>0.0.1-Magnolia6_3</version>
+    <version>0.0.2-Magnolia6_3-SNAPSHOT</version>
   </parent>
 
   <artifactId>magnolia-usermanager-inmemory</artifactId>

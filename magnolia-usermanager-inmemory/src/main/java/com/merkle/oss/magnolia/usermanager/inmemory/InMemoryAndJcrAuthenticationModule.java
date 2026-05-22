@@ -47,6 +47,14 @@ public class InMemoryAndJcrAuthenticationModule extends JCRAuthenticationModule 
 	}
 
 	@Override
+	protected void initUser() throws LoginException {
+		super.initUser();
+		if(getUser() instanceof InMemoryUser) {
+			super.realm = InMemoryUserManager.REALM;
+		}
+	}
+
+	@Override
 	protected void matchPassword() throws LoginException {
 		if (getUser() instanceof final InMemoryUser inMemoryUser) {
 			if (clientId == null) {

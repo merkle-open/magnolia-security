@@ -164,7 +164,7 @@ public class InMemoryUserManager implements UserManager {
 	public User addGroup(final User user, final String groupName) {
 		final InMemoryUser inMemoryUser = castOrThrow(user);
 		final Set<String> newGroups = Stream.concat(inMemoryUser.getGroups().stream(), Stream.of(groupName)).collect(Collectors.toSet());
-		updateUser(inMemoryUser.withRoles(newGroups, getAllGroups(newGroups)));
+		updateUser(inMemoryUser.withGroups(newGroups, getAllGroups(newGroups)));
 		return getUser(user.getName());
 	}
 

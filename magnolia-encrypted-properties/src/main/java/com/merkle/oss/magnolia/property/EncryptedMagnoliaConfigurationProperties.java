@@ -48,14 +48,15 @@ public class EncryptedMagnoliaConfigurationProperties extends DefaultMagnoliaCon
                 .orElse(null);
     }
 
-    static class EncryptedPropertySource implements PropertySource {
+    public static class EncryptedPropertySource implements PropertySource {
         private static final Logger LOG = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
         private final Provider<StringEncryptor> stringEncryptor;
         private final PropertySource propertySource;
 
         public EncryptedPropertySource(
                 final Provider<StringEncryptor> stringEncryptor,
-                final PropertySource propertySource) {
+                final PropertySource propertySource
+        ) {
             this.stringEncryptor = stringEncryptor;
             this.propertySource = propertySource;
         }

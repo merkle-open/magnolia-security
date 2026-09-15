@@ -29,6 +29,7 @@
 	</developers>
 	<modules>
 		<module>magnolia-usermanager-inmemory</module>
+		<module>magnolia-encrypted-properties</module>
 	</modules>
 
 	<properties>

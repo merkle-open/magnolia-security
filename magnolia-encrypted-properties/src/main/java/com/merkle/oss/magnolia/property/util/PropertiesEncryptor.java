@@ -26,7 +26,7 @@ public class PropertiesEncryptor {
         final Pattern pattern = Pattern.compile("ENC\\((.*)\\)");
         final Matcher matcher = pattern.matcher(content);
         if (matcher.find()) {
-            return matcher.replaceAll(matchResult -> operation.apply(matchResult.group()));
+            return matcher.replaceAll(matchResult -> operation.apply(matchResult.group()).replaceAll("\\$", "\\\\\\$"));
         }
         return content;
     }
